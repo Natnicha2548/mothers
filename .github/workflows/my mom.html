@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mother's Day</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fefcef;
+            text-align: center;
+        }
+        .header {
+            background-color: #660627;
+            color: white;
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        img {
+            max-width: 300px;
+            height: auto;
+        }
+        .text-box {
+            position: absolute;
+            background-color: #f2f0e9;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 16px;
+            white-space: nowrap;
+        }
+        .thai-top-left { top: 10%; left: -70px; }
+        .korean-bottom-left { bottom: 15%; left: -60px; }
+        .japanese-top-right { top: 10%; right: -170px; width: 160px; }
+        .thai-bottom-right { bottom: 15%; right: -60px; }
+
+        .button {
+            display: inline-block;
+            background-color: pink;
+            padding: 12px 25px;
+            border-radius: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #ffb6c1;
+        }
+        .footer {
+            background-color: #660627;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        /* ให้ responsive บนมือถือ */
+        @media (max-width: 480px) {
+            .thai-top-left { top: 5%; left: 0; }
+            .korean-bottom-left { bottom: 10%; left: 0; }
+            .japanese-top-right { top: 5%; right: 0; width: auto; }
+            .thai-bottom-right { bottom: 10%; right: 0; }
+            img { max-width: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">I Love my mother</div>
+
+    <div class="container">
+        <img src="Screenshot 2025-08-09 205358.png" alt="Mother's Day Image">
+        <div class="text-box thai-top-left">คิดถึงจังเลย</div>
+        <div class="text-box korean-bottom-left">사랑해요</div>
+        <div class="text-box japanese-top-right">私はあなたがいなくて寂しいです。</div>
+        <div class="text-box thai-bottom-right">รักน้า</div>
+    </div>
+
+    <!-- ปุ่มไปหน้าถัดไป -->
+    <a href="nextpage.html" class="button">Mother's Day</a>
+
+    <div class="footer">12-08-@2025</div>
+
+</body>
+</html>
